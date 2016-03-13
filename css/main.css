@@ -1,5 +1,5 @@
 body, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul {
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
@@ -8,11 +8,35 @@ body {
   width: 80%;
 }
 header {
-  text-align:center;
+  text-align: center;
+  overflow: hidden;
 }
 header span {
   text-align:left;
+  display:block;
 }
+
 header h1 {
   border-top: 1px solid black;
+  margin: 5px 0;
+}
+  header h1 span {
+  display: inline-block;
+  position: relative;
+}
+header h1 span:before,header h1 span:after  {
+  content:"";
+  border-top: 5px solid black;
+  display: block;
+  position: absolute;
+  top: 20px;
+  width: 9999px;
+}
+header h1 span:before {
+  right: 100%;
+  margin-right: 5px;
+}
+header h1 span:after {
+ margin-left: 5px;
+ left: 100%;
 }
