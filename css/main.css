@@ -15,6 +15,13 @@ header span {
   text-align:left;
   display:block;
 }
+.features:after {
+  content="";
+  border-bottom: 1px solid black;
+  display: inline-block;
+  text-align: left;
+  width: 9999px;  
+}
 
 header h1 {
   border-top: 1px solid black;
@@ -39,4 +46,7 @@ header h1 span:before {
 header h1 span:after {
  margin-left: 5px;
  left: 100%;
+}
+
+
 }
