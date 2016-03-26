@@ -21,24 +21,32 @@ body {
 	height: 0;
 	}
 
-.col-1-2 {
+.colsecond {
   width: 50%;
   margin: 0 0em 2em 0em;
   padding-top: 3em;
-  background-color: green;
   float: left;
 
 
 }
-.col-1-4 {
+.colsecond img {
+  width: 100%;
+}
+.colfirst {
+  width: 25%;
+  margin: 0 0 0 0;
+  padding: 3em 2em 0 1em;
+  float: left;
+  background-color: pink;
+
+}
+.colthird {
   width: 25%;
   margin: 0 0 0 0;
   padding: 3em 4em 0 0;
   float: left;
   background-color: pink;
-
 }
-
 header {
   text-align: center;
   overflow: hidden;
