@@ -23,9 +23,10 @@ body {
 
 .colsecond {
   width: 50%;
-  margin: 0 0em 2em 0em;
-  padding-top: 3em;
+  margin: 0em 0em 0em 0em;
+  padding-top: 3em 2em 0em 2em;
   float: left;
+  box-sizing: border-box;
 
 
 }
@@ -34,23 +35,53 @@ body {
 }
 .colfirst {
   width: 25%;
+  height: 600px;
   margin: 0 0 0 0;
   padding: 3em 2em 0 2em;
   float: left;
   background-color: pink;
+  box-sizing: border-box;
 
 }
 .colthird {
   width: 25%;
   margin: 0 0 0 0;
-  padding: 3em 4em 0 0;
+  padding: 3em 4em 0 2em;
   float: left;
   background-color: pink;
+  box-sizing: border-box;
+}
+
+.lower-section {
+border-left: 1px dashed gray;
+border-top: 1px dashed gray;
+border-right: 1px dashed gray;
+border-bottom: 20px solid black;
+}
+.lower-section-heading {
+  text-align: center;
+}
+.lower-section-article {
+float: left;
+width: 33.33%;
+padding: 8px 35px;
+min-height: 180px;
+border-right: 1px dashed gray;
+text-align: center;
+font-size: .9em;
+}
+.footer-section-one {
+  float: left;
+}
+.footer-section-two {
+  float:right;
+}
+.footer-section-three {
+  float:right;
 }
 header {
   text-align: center;
   overflow: hidden;
-  border-bottom: 1px solid black;
   position:relative;
 
 }
@@ -64,6 +95,16 @@ header span {
   z-index: 999;
   bottom: -1%;
   padding-right: 10px;
+}
+.features:after {
+content:"";
+border-top: 1px solid black;
+display: block;
+position: absolute;
+margin-left: 5px;
+left: 100%;
+top:13px;
+width: 9999px;
 }
 
 header h1 {
